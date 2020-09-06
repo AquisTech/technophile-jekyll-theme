@@ -1,11 +1,6 @@
 # technophile-jekyll-theme
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
-
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
-
+technophile-jekyll-theme is a Jekyll theme for Technophiles, Developers and Hackers to host their portfolio and blog
 
 ## Installation
 
@@ -31,11 +26,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+Include `gem "technophile-jekyll-theme"` in Gemfile under `jekyll_plugins` group
+```
+group :jekyll_plugins do
+  gem 'technophile-jekyll-theme', '~> 0.1.0'
+  # other plugins
+end
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/AquisTech/technophile-jekyll-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
@@ -50,3 +51,4 @@ To add a custom directory to your theme-gem, please edit the regexp in `technoph
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
+## Built and maintained by [Anand Bait](https://aquistech.github.io/ 'AquisTech')
