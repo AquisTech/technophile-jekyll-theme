@@ -10,7 +10,9 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/AquisTech/technophile-jekyll-theme"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
-
-  spec.add_runtime_dependency "jekyll", "~> 4.1"
+  spec.files                   = `git ls-files -z`.split("\x0").select do |f|
+    f.match(%r{^(assets|_(data|includes|layouts|sass)/|(LICENSE|README|CHANGELOG)((\.(txt|md|markdown)|$)))}i)
+  end
+  spec.add_runtime_dependency 'jekyll', '~> 4.1'
+  spec.add_runtime_dependency 'bundler', '~> 2.1'
 end
