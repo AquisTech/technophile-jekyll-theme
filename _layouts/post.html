@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} by {{ page.author }}</p>
-{% assign category = site.categories | where: 'short_name', page.category | first %}
-{% if category %}
-  Other posts in <a href="{{ category.url }}">{{ category.short_name }}</a>
-{% endif %}
-{{ content }}
+<div class='container-fluid'>
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.date | date_to_string }} by {{ page.author }}</p>
+  {% assign category = site.categories | where: 'short_name', page.category | first %}
+  {% if category %}
+    Other posts in <a href="{{ category.url }}">{{ category.short_name }}</a>
+  {% endif %}
+  {{ content }}
+</div>
