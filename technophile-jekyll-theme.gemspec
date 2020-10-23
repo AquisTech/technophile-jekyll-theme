@@ -13,13 +13,14 @@ Gem::Specification.new do |spec|
   spec.files                   = `git ls-files -z`.split("\x0").select do |f|
     f.match(%r{^(assets|_(data|includes|layouts|sass)/|(LICENSE|README|CHANGELOG)((\.(txt|md|markdown)|$)))}i)
   end
-  spec.add_runtime_dependency 'jekyll', '~> 4.1'
+  spec.add_runtime_dependency 'jekyll', '~> 4.0.1'
   spec.add_runtime_dependency 'bundler', '~> 2.1'
   spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_development_dependency 'jquery-rails', '~> 4.4.0'
-  spec.add_development_dependency 'bootstrap', '~> 4.5.0'
+  spec.add_development_dependency 'bootstrap', '~> 4.5.2'
   spec.add_runtime_dependency 'jekyll-sitemap', '~> 1.4.0'
-  spec.add_runtime_dependency 'jekyll-feed', '~> 0.13.0'
-  spec.add_runtime_dependency 'jekyll-seo-tag', '~> 2.6.1'
+  spec.add_runtime_dependency 'jekyll-feed', '~> 0.15.1'
+  spec.add_runtime_dependency 'jekyll-seo-tag', '~> 2.7.1'
   spec.add_runtime_dependency 'jekyll-target-blank', '~> 2.0.0'
+  spec.add_runtime_dependency 'jekyll-admin', '~> 0.10.2'
 end
