@@ -14,6 +14,7 @@ defaults:
       categories: ''
       slug: ''
       tags: ''
+      author: 'AquisTech'
   - scope:
       path: pages
       type: pages
