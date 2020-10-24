@@ -2,23 +2,30 @@
 defaults:
   - scope:
       path: ''
-      type: 'categories'
+      type: categories
     values:
-      layout: 'category'
+      layout: category
   - scope:
       path: ''
-      type: 'posts'
+      type: posts
     values:
-      layout: 'post'
+      layout: post
+      permalink: /blog/:categories/:slug
+      categories: ''
+      slug: ''
+      tags: ''
+  - scope:
+      path: pages
+      type: pages
+    values:
+      layout: page
   - scope:
       path: ''
-      type: 'pages'
     values:
-      layout: 'page'
-  - scope:
-      path: ''
-    values:
-      layout: 'default'
+      layout: default
+collections:
+  categories:
+    output: true
 plugins:
   - jekyll-feed
   - jekyll-sitemap
