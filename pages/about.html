@@ -2,5 +2,8 @@
 title: About
 permalink: about
 ---
-<h1>This is {{ page.title }}</h1>
-<h2>Override this page in your site</h2>
+{% if site.company %}
+  {% include about/us.html %}
+{% else %}
+  {% include about/me.html %}
+{% endif %}
