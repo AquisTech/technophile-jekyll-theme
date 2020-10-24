@@ -1,8 +1,26 @@
-<footer class='navbar navbar-light bg-light'>
-  <div class='navbar-text m-auto'>
-    Developed with <span class='text-danger beat'>&#x2764;</span> by <a href="https://aquistech.github.io">AquisTech</a>.
-    Powered by <a href="https://aquistech.github.io/technophile-jekyll">Technophile Jekyll</a>.
-    Hosted at <a href="https://pages.github.com">Github</a>.
-    Subscribe via <a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS</a>
+<footer class='footer'>
+  <div class='container-fluid bg-light py-3'>
+    <div class='row'>
+      {% include footer/short_intro.html %}
+      {% include footer/links_column1.html %}
+      {% include footer/links_column2.html %}
+      {% include footer/links_column3.html %}
+      {% include footer/contact_info.html %}
+      {% include footer/enquiry_form.html %}
+    </div>
+  </div>
+  <div class='navbar navbar-light bg-light'>
+    <div class='navbar-text m-auto'>
+      Developed with <span class='text-danger beat'>&#x2764;</span> by <a href="https://aquistech.github.io">AquisTech</a>.
+      Powered by <a href="https://aquistech.github.io/technophile-jekyll">Technophile Jekyll</a>.
+      Hosted at <a href="https://pages.github.com">Github</a>.
+      Subscribe via <a href="{{ '/feed.xml' }}">RSS</a>
+    </div>
+  </div>
+  <div class='navbar navbar-light bg-light'>
+    <div class='navbar-text m-auto'>
+      &copy; <a href="https://aquistech.github.io">AquisTech</a> All rights reserved.
+      <a href="https://aquistech.github.io">AquisTech</a>
+    </div>
   </div>
 </footer>
